@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Great Vibes';
+    src: url(GreatVibes-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Great Vibes';
+    color: rgb(255, 166, 50);
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.part {
+    height: 100vh;
+    width: 100%;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+        url('backlogo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.part>h1 {
+    color: rgb(255, 166, 50);
+    font-size: 120px;
+}
+
+.part>h6 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.part2 {
+    height: 170vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    z-index: 10;
+}
+
+.down1 {
+    height: 100%;
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+#pic1 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transform: rotate(20deg);
+}
+
+#pic2 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: rotate(0deg);
+}
+
+#pic3 {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transform: rotate(25deg);
+}
+
+#pic4 {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    transform: rotate(-10deg);
+}
+
+#pic5 {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    transform: rotate(10deg);
+}
+
+#pic6 {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    transform: rotate(-3deg);
+}
+
+.down2 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.down2>p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px;
+    opacity: 1;
+}
+
+.down2>h1 {
+    font-size: 45px;
+    padding: 30px 0px;
+    color: white
+}
+
+.songname{
+    height:200px ;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: linear-gradient(to right, white, rgb(255, 166, 50));
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.songname > p{
+    font-size: 25px;
+    color: black;
+}
+
+.song {
+    height: 70px;     
+    width: 300px;     
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.song > img {
+    width: 100%; 
+    height: 100%;  
+    object-fit: cover;
+}
+
+.down3 {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.imagebox {
+    height: 350px;
+    width: 250px;
+    background-color: rgba(158, 130, 77, 0.736);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    height: 80%;
+    width: 85%;
+    background-color: white;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.imagebox>p {
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+}
+
+.part3 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, white, rgb(255, 166, 50));
+    position: relative;
+    z-index: 5;
+}
+
+.part3>h1 {
+    font-size: 85px;
+    color: black;
+}
+
+.part3>h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.imagebox:hover {
+    transform: scale(2);
+}
